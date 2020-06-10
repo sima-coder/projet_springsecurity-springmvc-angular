@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="..static/css/bootstrap.min.css"
+										   th:href="@{css/bootstrap.min.css}"/>
+	<title>Produits</title>
+</head>
+<body>
+	<p></p>
+	<div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">Confirmation</div>
+			<div class="panel-body">
+				<div class="form-group">
+					<label>ID : </label>
+					<label th:text="${produit.id}"></label>				
+				</div>
+				<div class="form-group">
+					<label>Désignation : </label>
+					<label th:text="${produit.designation}"></label>				
+				</div>
+				<div class="form-group">
+					<label>Prix : </label>
+					<label th:text="${produit.prix}"></label>				
+				</div>
+				<div class="form-group">
+					<label>Quantité : </label>
+					<label th:text="${produit.quantite}"></label>				
+				</div>
+			
+			</div>
+		</div>
+	</div>
+</body>
+</html>
